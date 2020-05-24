@@ -52,7 +52,7 @@ epochs = 1
 test = 1
 flag = 0
 
-while int(accuracy) < 96 :
+while int(accuracy) < 95 :
 	if flag == 1 :
 		model = keras.backend.clear_session()
 		neurons = neurons+10
