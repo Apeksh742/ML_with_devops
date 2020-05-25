@@ -8,7 +8,7 @@ s.starttls()
   
 # Authentication 
 sender_email = "Apekshagarwal369@gmail.com"
-sender_password = "rj14sz7820"
+sender_password = # "Enter your Password"
 receiver_email = "Apekshagarwal8@gmail.com"
 s.login(sender_email, sender_password ) 
   
