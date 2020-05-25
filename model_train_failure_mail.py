@@ -7,15 +7,20 @@ s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls() 
   
 # Authentication 
-s.login("Apekshagarwal369@gmail.com", "rj14sz7820") 
+sender_email = "Apekshagarwal369@gmail.com"
+sender_password = "rj14sz7820"
+receiver_email = "Apekshagarwal8@gmail.com"
+s.login(sender_email, sender_password ) 
   
 # message to be sent 
-message = '''Hello, 
+message = '''/
+Subject: Build model_train failed
+Hello, 
 				Developer this is an email regarding your last commit. It seems that your model_train.py is not working properly please check it once and recommit.
 			THANK YOU'''
   
 # sending the mail 
-s.sendmail("Apekshagarwal369@gmail.com", "Apekshagarwal8@gmail.com", message) 
+s.sendmail(sender_email,receiver_email , message) 
   
 # terminating the session 
 s.quit() 
