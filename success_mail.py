@@ -7,16 +7,21 @@ s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls() 
   
 # Authentication 
-s.login("Apekshagarwal369@gmail.com", "rj14sz7820") 
+sender_email = "Apekshagarwal369@gmail.com"
+sender_password = "rj14sz7820"
+receiver_email = "Apekshagarwal8@gmail.com"
+s.login(sender_email, sender_password ) 
   
 # message to be sent 
-message = '''Hello, 
-				Developer this is an email regarding your last commit. Your last commit was taken into consideration and based on that the trained model has given best accuracy .
-				Congratulations on your success.
+message = '''\
+Subject: Build Success
+Hello, 
+      Developer this is an email regarding your last commit. Your last commit was taken into consideration and based on that the trained model has given best accuracy .
+Congratulations on your success.
 			THANK YOU ...'''
   
 # sending the mail 
-s.sendmail("Apekshagarwal369@gmail.com", "Apekshagarwal8@gmail.com", message) 
+s.sendmail(sender_email,receiver_email , message) 
   
 # terminating the session 
 s.quit() 
