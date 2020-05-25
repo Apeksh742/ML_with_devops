@@ -41,3 +41,5 @@ Requirements: Docker, Linux OS (Redhat, CentOS) , Jenkins and some jenkins plugi
   It will monitor the environment in which ml model is running and perform the necessary actions according to the current status of    environment.
   
 # Article link: https://medium.com/@apekshagarwal.742/integration-of-ml-with-devops-2e47bc6e2fd7
+
+#                                                      Thank You!
