@@ -13,7 +13,7 @@ receiver_email = "Apekshagarwal8@gmail.com"
 s.login(sender_email, sender_password ) 
   
 # message to be sent 
-message = '''/
+message = '''\
 Subject: Build model_train failed
 Hello, 
 				Developer this is an email regarding your last commit. It seems that your model_train.py is not working properly please check it once and recommit.
