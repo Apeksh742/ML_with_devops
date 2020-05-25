@@ -5,7 +5,7 @@ Requirements: Docker, Linux OS (Redhat, CentOS) , Jenkins and some jenkins plugi
 # Steps 
 
 1. Clone this repository and get into Dockerfile Directory and run following command with your syntax to create the image with all necessary ML libraries
-      docker build -t <name>:<tag> <location of docker file>
+      docker build -t name:tag location of docker file
  
 2. Open jenkins and using systemctl start jenkins and it is available on port 8080 by deafult
 
